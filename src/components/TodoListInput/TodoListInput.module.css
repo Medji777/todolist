@@ -1,0 +1,34 @@
+.todolist__input {
+    display: grid;
+    grid-template-areas: 'a b' 'c c';
+    grid-template-columns: 5fr 1fr;
+}
+
+.todolist__input_form {
+    display: grid;
+    grid-area: a;
+    grid-template-areas: 'a b' 'c c';
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 25px;
+    grid-gap: 5px;
+}
+
+.todolist__input_form input {
+    grid-area: a;
+    padding: 2px 5px;
+}
+
+.todolist__input_form span {
+    grid-area: c;
+    font-size: 11px;
+}
+
+.todolist__input_form button {
+    grid-area: b;
+}
+
+.todolist__input_error {
+    grid-area: c;
+    color: red;
+    font-size: 11px;
+}
