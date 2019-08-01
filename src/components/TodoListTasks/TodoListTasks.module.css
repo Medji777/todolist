@@ -1,0 +1,60 @@
+.todolist__task {
+    display: grid;
+    grid-template-areas: 'a b c' 'd d d';
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 30px;
+    align-items: center;
+}
+
+.todolist__task_form {
+    display: grid;
+    grid-template-areas: 'a b' 'c c';
+    grid-template-columns: 9fr 1fr;
+}
+
+.todolist__task_form > form {
+    grid-area: a;
+    display: grid;
+    grid-template-areas: 'a b';
+    grid-template-columns: 1fr 8fr;
+}
+
+.todolist__task_form > span {
+    grid-area: b;
+}
+
+.todolist__task_done {
+    text-decoration: line-through;
+    color: #a19f9f;
+    min-height: 100%;
+    line-height: 1.6;
+}
+
+.todolist__task_flag {
+    grid-area: a;
+    margin: auto 0 auto 5px;
+}
+
+.todolist__task_title {
+    grid-area: b;
+    margin: 0;
+}
+
+.todolist__task_active {
+    grid-area: b;
+    margin: 0;
+    min-height: 100%;
+    line-height: 1.6;
+}
+
+.todolist__task_error {
+    grid-area: d;
+    font-size: 11px;
+    color: red
+}
+
+.todolist__task_close {
+    grid-area: c;
+    cursor: pointer;
+    margin: 0 auto;
+}
